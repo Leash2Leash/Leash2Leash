@@ -21,12 +21,18 @@
  * ---------------------------------------------- */
 
 @-webkit-keyframes shake-br{0%,100%{-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform-origin:100% 100%;transform-origin:100% 100%}10%{-webkit-transform:rotate(2deg);transform:rotate(2deg)}20%,40%,60%{-webkit-transform:rotate(-4deg);transform:rotate(-4deg)}30%,50%,70%{-webkit-transform:rotate(4deg);transform:rotate(4deg)}80%{-webkit-transform:rotate(-2deg);transform:rotate(-2deg)}90%{-webkit-transform:rotate(2deg);transform:rotate(2deg)}}@keyframes shake-br{0%,100%{-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform-origin:100% 100%;transform-origin:100% 100%}10%{-webkit-transform:rotate(2deg);transform:rotate(2deg)}20%,40%,60%{-webkit-transform:rotate(-4deg);transform:rotate(-4deg)}30%,50%,70%{-webkit-transform:rotate(4deg);transform:rotate(4deg)}80%{-webkit-transform:rotate(-2deg);transform:rotate(-2deg)}90%{-webkit-transform:rotate(2deg);transform:rotate(2deg)}}
-
+@-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
 
 h1 {
 	-webkit-animation: shake-br 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) 1s 5 backwards;
 	-moz-animation: shake-br 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) 1s 5 backwards;
 	animation: shake-br 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) 1s 5 backwards;
+}
+
+.navbar-header {
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-moz-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
@@ -40,8 +46,8 @@ body {
 
 body {
     font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
-    background-color: #727171;
-    color: #d3d3d3;
+    background-color: #222;
+    color: #fff;
     webkit-tap-highlight-color: #222;
 }
 
@@ -79,6 +85,7 @@ p {
     font-size: 17px;
     line-height: 1.7;
     margin-bottom: 20px;
+    color:#fff;
 }
 
 .wide-space {
@@ -91,7 +98,7 @@ p {
 }
 
 .bg-primary {
-    background-color: #fff;
+    background-color: #333;
 }
 
 .bg-dark {
@@ -105,7 +112,7 @@ p {
 }
 
 .text-faded {
-    color: black;
+    color: white;
 }
 
 .text-dark {
